@@ -1,0 +1,546 @@
+@font-face {
+    font-family: 'optimusprincepsregular';
+    src: url('fonts/optimusprinceps-webfont.eot');
+    src: url('fonts/optimusprinceps-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/optimusprinceps-webfont.woff') format('woff'),
+         url('fonts/optimusprinceps-webfont.ttf') format('truetype'),
+         url('fonts/optimusprinceps-webfont.svg#optimusprincepsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	position: relative;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background-color:#000;
+	background-image: url('../images/bg.png');
+	background-repeat: repeat-x;
+	overflow-y:scroll;
+	color:#fff;
+	font-family: 'optimusprincepsregular';
+	width:100%;
+}
+
+img {
+	border:none;
+}
+
+a:focus{
+	outline:none;
+}
+
+a{
+	text-decoration:none;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+.clear
+{
+clear:both;
+}
+/*Home Page Hover Effect starts*/
+.zitem {
+			width:211px;
+			height:158px;	
+			
+			margin:5px 5px 5px 0;
+			
+			/* required to hide the image after resized */
+			overflow:hidden;
+			
+			/* for child absolute position */
+			position:relative;
+			
+			/* display div in line */
+			float:left;
+		}
+		
+		.zitem img {
+			border:0;
+			
+			/* allow javascript moves the img position*/
+			position:absolute;
+		}
+		
+		.zitem .caption {
+			width:211px;
+			height:35px;
+			background:#000;
+			color:#fff;
+			font-weight:bold;
+				
+			/* fix it at the bottom */
+			position:absolute;
+			bottom:-1px; /* fix IE issue */
+			left:0;
+
+			/* hide it by default */
+			display:none;
+
+			/* opacity setting */
+			filter:alpha(opacity=70);    /* ie  */
+			-moz-opacity:0.7;    /* old mozilla browser like netscape  */
+			-khtml-opacity: 0.7;    /* for really really old safari */  
+			opacity: 0.7;    /* css standard, currently it works in most modern browsers like firefox,  */
+
+		}
+
+		.zitem .caption a {
+			text-decoration:none;
+			color:#fff;
+			font-size:16px;	
+			font-family: 'optimusprincepsregular';
+			text-align:center;
+			
+			/* add spacing and make the whole row clickable*/
+			padding:10px;
+			display:block;
+		}
+
+/*Home Page Hover Effect ends*/
+
+.wrapper
+{
+margin:0px auto;
+padding:0px 0px 0px 0px;
+position:relative;
+width:100%;
+height:100%;
+}
+
+.wrapper .header
+{
+margin:0px auto;
+padding:0px 0px 0px 0px;
+position:relative;
+width:1000px;
+text-align:center;
+min-width:1000px;
+}
+
+.wrapper .header img
+{
+padding:10px 0px 0px 0px;
+}
+.wrapper .menu
+{
+width: 100%;
+margin: 10px auto 0px;
+padding: 0px 0px 0px 0px;
+background-image: url('../images/topline.png');
+background-position:center;
+background-repeat: repeat-x;
+height:36px;
+min-width:1000px;
+}
+
+.menu .menu_div
+{
+position: relative;
+width: 1000px;
+margin: 0px auto;
+padding: 0px 0px 0px 0px;
+height:100%;
+}
+
+.menu_div ul
+{
+position:relative;
+padding:0px 0px 0px 180px;
+margin:0px auto;
+list-style:none;
+font-size:16px;
+height:36px;
+line-height:35px;
+font-weight:bold;
+}
+
+.menu_div ul li
+{
+float:left;
+}
+
+.menu_div ul li a
+{
+color:#373736;
+text-decoration:none;
+padding: 0px 30px 0px 30px;
+background-color:#000;
+border-right:2px solid #373736;
+}
+
+.menu_div ul li a.acollection
+{
+color:#373736;
+text-decoration:none;
+padding: 0px 16px 0px 16px;
+background-color:#000;
+margin:0px 0px 0px 0px;
+}
+
+#selected
+{
+color:#e2b02c;
+}
+
+.menu_div ul li a:hover
+{
+color:#e2b02c;
+}
+.menu_div ul li a.selected
+{
+color:#e2b02c;
+}
+
+#menu ul{
+	list-style:none;
+	position:absolute;
+	left:-9999px;
+	margin:0px 0px 0px 185px;
+	padding:0px 0px 0px 0px;
+	
+}
+
+#menu ul li{
+	padding-top:1px 0px 0px 0px; /* Introducing a padding between the li and the a give the illusion spaced items */
+	display:block;
+	
+}
+
+#menu ul li a{
+	padding:0px 13px 0px 13px;
+	white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+	color:#373736;
+	background-color:transparent;
+}
+
+#menu li:hover ul{ /* Display the dropdown on hover */
+	left:0; /* Bring back on-screen when needed */
+	z-index:9;
+	width:auto;
+}
+
+#menu li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+	text-decoration:none;
+	z-index:2;
+}
+
+#menu li:hover ul li{
+	
+	padding:0px 5px 0px 5px;
+	height:20px;
+	z-index:2;
+}
+
+#menu li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+	
+	color:#e2b02c;
+}
+.wrapper .content
+{
+margin:0px auto;
+padding:0px auto;
+position:relative;
+width:1000px;
+min-height:550px;
+min-width:1000px;
+}
+
+.content .rimages
+{
+margin:0px auto;
+padding:20px 10px 0px 0px;
+position:relative;
+width:200px;
+height:auto;
+float:right;
+}
+
+.content .slider
+{
+margin:0px auto;
+padding:20px 0px 0px 10px;
+position:relative;
+width:750px;
+height:auto;
+float:left;
+border:none;
+}
+
+.rimages img
+{
+padding:0px 0px 15px 0px;
+}
+
+.content h1
+{
+margin:0x 0px 0px 0px;
+position:relative;
+padding:0px 0px 0px 10px;
+color:#e2b02c;
+font-size:36px;
+height:48px;
+}
+
+.content .collection
+{
+margin:0px auto;
+width:1000px;
+padding:0;
+position:relative;
+}
+
+.content .collection p {
+	margin:0px 10px 0px 10px;
+	text-align:justify;
+}
+
+.collection img
+{
+margin:20px 15px 20px 15px;
+border:5px solid #e2b02c;
+float:left;
+}
+
+.collection .code{
+	margin:0px 20px 20px 20px;
+	width:960px;
+	padding:0px 0px 0px 0px;
+}
+
+.code a{
+	text-decoration:none;
+	color:#fff;
+	padding:0px 80px 0px 80px;
+	margin:0px 19px 0px 23px;
+	font-weight:bold;
+}
+.code a:hover{
+	color:#e2b02c;
+}
+.content .conleft
+{
+width:450px;
+padding:0px 0px 0px 0px;
+margin:0xp auto;
+position:relative;
+float:left;
+}
+
+.conleft h3
+{
+color:#e2b02c;
+padding:0px 0px 0px 10px;
+margin:0px 0px 0px 0px;
+}
+
+.conleft p
+{
+padding:0px 0px 0px 10px;
+margin:0px 0px 0px 0px;
+font-size:16px;
+}
+
+.conleft a
+{
+text-decoration:none;
+color:#fff;
+}
+
+.conleft a:hover
+{
+text-decoration:underline;
+}
+.content .conright
+{
+width:490px;
+height:320px;
+margin:0px 0px 20px 0px;
+padding:0px 0px 0px 10px;
+float:left;
+position:relative;
+border-left:1px solid #734C00;
+}
+.conright span
+{
+color:#FF0000;
+}
+
+.conright h3
+{
+padding:0px 0px 0px 20px;
+margin:0px 0px 0px 0px;
+font-size:24px;
+color:#e2b02c;
+}
+
+.content .conright table
+{
+padding:0px 0px 0px 20px;
+margin:0px 0px 0px 0px;
+width:400px;
+}
+
+.content .conright tr
+{
+height:40px;
+}
+.conright input[type="submit"]
+{
+width:120px;
+height:35px;
+background-color:#BE8F1B;
+color:#000;
+font-size:18px;
+border:none;
+font-family: 'optimusprincepsregular';
+}
+
+.conright input[type="submit"]:hover 
+{
+background-color: #fff;
+}
+
+.conright input,textarea
+{
+padding-left:4px;
+background-color:#141517;
+border:none;
+color:#fff;
+
+}
+
+.confirm
+{
+font-family:Calibri;
+font-size:18px;
+padding-left:30px;
+color:#fff;
+}
+
+.confirm a:hover
+{
+text-decoration:underline;
+} 
+
+.content .map
+{
+margin:0px auto;
+padding:0px 0px 0px 0px;
+width:1000px;
+height:450px;
+position:relative;
+
+}
+.map h4
+{
+padding:0px 0px 10px 10px;
+margin:0px 0px 0px 0px;
+font-size:16px;
+color:#e2b02c;
+}
+
+.map a
+{
+text-decoration:none;
+color:#e2b02c;
+margin:10px 0px 0px 10px;
+}
+
+.map a:hover {
+	text-decoration:underline;
+}
+
+.content .about
+{
+margin:0px auto;
+width:1000px;
+padding:0px 0px 0px 0px;
+position:relative;
+}
+
+.bold{
+font-weight:bold;
+color:#E2B02C;
+}
+
+.about img{
+	border:2px solid #e2b02c;
+	float:left;
+	margin:0px 15px 0px 10px;
+}
+.content .about p {
+	text-align:justify;
+	padding:0px 10px 0px 10px;
+}
+
+.wrapper .line
+{
+position:relative;
+margin:0px auto;
+padding:0px auto;
+width:100%;
+background-image: url('../images/footerline.png');
+background-position:center;
+background-repeat: repeat-x;
+height:5px;
+min-width:1000px;
+}
+
+.wrapper .footer
+{
+margin:0px auto;
+padding:0px 0px 15px 0px;
+position:relative;
+width:1000px;
+min-width:1000px;
+}
+
+.footer .content1
+{
+margin:10px 0px 0px 10px;
+float:left;
+font-size:13px;
+}
+
+.content1 a
+{
+text-decoration:none;
+color:#fff;
+}
+
+.content1 a:hover
+{
+color:#e2b02c;
+}
+
+.footer .content2
+{
+margin:10px 10px 0px 0px;
+float:right;
+font-size:13px;
+}
+
+.wrapper .ov
+{
+margin:10px 0px 0px 0px;
+padding:0px 0px;
+color:#e2b02c;
+text-align:center;
+font-size:13px;
+min-width:1000px;
+}
+
+.ov a
+{
+text-decoration:none;
+color:#e2b02c;
+}
+
+.ov a:hover { text-decoration:underline;  }
+
+

@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+		<meta content="Global" name="distribution">
+		<meta name="description" content="Ruby Gold Description" />
+		<meta name="keywords" content="RUBY GOLD,Ruby Gold,ruby gold,ruby gold bangles,bangles,ruby bangles" />
+		<meta name="author" content="Overclockers Design" />
+		<title>Gold Bangles | RUBY GOLD</title>
+		<link rel="shortcut icon" type="images/x-icon" href="images/favicon.ico"/>
+		<link type="text/css" href="css/style.css" rel="stylesheet" />
+		<link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="themes/light/light.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="themes/dark/dark.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="themes/bar/bar.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/style1.css" type="text/css" media="screen" />
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+			<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+			<script type="text/javascript">
+			$(window).load(function() {
+				$('#slider').nivoSlider();
+			});
+			</script>
+			
+		<script>
+
+		$(document).ready(function() {
+
+			//move the image in pixel
+			var move = -15;
+			
+			//zoom percentage, 1.2 =120%
+			var zoom = 1.2;
+
+			//On mouse over those thumbnail
+			$('.zitem').hover(function() {
+				
+				//Set the width and height according to the zoom percentage
+				width = $('.zitem').width() * zoom;
+				height = $('.zitem').height() * zoom;
+				
+				//Move and zoom the image
+				$(this).find('img').stop(false,true).animate({'width':width, 'height':height, 'top':move, 'left':move}, {duration:200});
+				
+				//Display the caption
+				$(this).find('div.caption').stop(false,true).fadeIn(200);
+			},
+			function() {
+				//Reset the image
+				$(this).find('img').stop(false,true).animate({'width':$('.zitem').width(), 'height':$('.zitem').height(), 'top':'0', 'left':'0'}, {duration:100});	
+
+				//Hide the caption
+				$(this).find('div.caption').stop(false,true).fadeOut(200);
+			});
+
+		});
+
+		</script>	
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-37976585-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+	
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="header">
+				<img src="images/logo.png" alt="Ruby Gold Logo" title="RUBY GOLD"/>
+			</div>
+	
+			<div class="menu">
+				<div class="menu_div">
+					<ul id="menu">
+						<li><a href="#" class="selected">HOME</a></li>
+						
+						<li><a href="about.html">ABOUT US</a></li>
+						
+						<li><a href="machinebangles.html" title="Click below to view our Collection">OUR COLLECTION</a>
+							<ul>
+								<li><a href="machinebangles.html">Machine Bangles</a></li>
+								<li><a href="saudibangles.html">Saudi Bangles</a></li>
+								<li><a href="castingantique.html">Casting Antique</a></li>
+								<li><a href="castingfusion.html" style="border:none;">Casting Fusion</a></li>
+								<!--
+								<li><a href="#" style="border:none;">CNC</a></li>
+								
+								<li><a href="#">Category 6</a></li>
+								<li><a href="#" style="border:none;">Category 7</a></li>
+								-->
+							</ul>
+						</li>
+						
+						<li><a href="contact.php" title="Click here to Contact Us" style="border:none;">CONTACT US</a></li>
+					</ul>
+				</div>
+			</div>
+	<div class="clear"></div>
+	
+			<div class="content" style="margin:20px auto 10px;">
+				<div class="slider">
+					<div id="wrapper">
+			
+
+						<div class="slider-wrapper theme-default">
+							<div id="slider" class="nivoSlider">
+								
+								<img src="images/1.jpg" alt="" />
+								<img src="images/2.jpg" alt="" />
+								<img src="images/3.jpg" alt="" />
+								<img src="images/4.jpg" alt="" />
+								
+							</div>
+						 </div>
+
+					</div>
+				</div>
+
+				<div class="rimages">
+					<div class="zitem">
+						<a href="machinebangles.html"><img src="images/machine1.jpg" alt="Machine Bangles"/></a>
+						<div class="caption">
+							<a href="machinebangles.html">Machine Bangle</a>
+						</div>
+					</div>
+					<div class="zitem">
+						<a href="saudibangles.html"><img src="images/saudi1.jpg" alt="Saudi Bangles"/></a>
+						<div class="caption">
+							<a href="saudibangles.html">Saudi Bangle</a>
+						</div>
+					</div>
+					<div class="zitem">
+						<a href="castingantique.html"><img src="images/castingantique1.jpg" alt=" Casting Antique Bangles"/></a>
+						<div class="caption">
+							<a href="castingantique.html" style="padding:5px;">Casting Antique Bangle</a>
+						</div>
+					</div>
+				</div>
+			</div>
+	<div class="clear"></div>
+	
+			<div class="line">
+			</div>
+	
+			<div class="footer">
+				<div class="content1">
+					<a href="privacy.html">PRIVACY POLICY</a>&nbsp;&nbsp;|&nbsp;&nbsp; <a href="jcare.html">JEWELLERY CARE</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="contact.php">CONTACT US</a>
+				</div>
+
+			<div class="content2">
+				&nbsp;COPYRIGHT&nbsp;&nbsp;&copy;&nbsp;&nbsp;2013 &nbsp;RUBY GOLD. ALL RIGHTS RESERVED 
+				
+			</div>
+			</div>
+	<div class="clear"></div>
+	
+			<div class="ov">
+				Powered by <a href="http://www.overclockersdesign.com/" target="_blank" title="Overclockers Design">Overclockers Design</a>
+			</div>
+		</div>
+	</body>
+</html>
